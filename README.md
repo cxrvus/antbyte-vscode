@@ -1,4 +1,4 @@
-# VS Code AntByte Extension
+# VS Code Extension for [AntByte](https://github.com/cxrvus/antbyte)
 
 Provides syntax highlighting for `.ant` files.
 
