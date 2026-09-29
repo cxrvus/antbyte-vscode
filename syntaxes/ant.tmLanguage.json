@@ -28,11 +28,11 @@
     },
     "keywords": {
       "name": "keyword.control.ant",
-      "match": "^[a-z][a-z0-9_]*"
+      "match": "^(set|fn|ant|use|use_cfg|no_std)"
     },
     "constants": {
       "name": "constant.language.ant",
-      "match": "\\b[A-Z][A-Z0-9_]*\\b"
+      "match": "\\b(?:[A-Z][A-Z0-9_]*(?::[0-7])?|[01])\\b"
     },
     "function_calls": {
       "name": "entity.name.function.ant",
@@ -53,7 +53,7 @@
         },
         {
           "name": "constant.numeric.ant",
-          "match": "\\b(0x[0-9a-fA-F]+|0b[01]+|[0-9]+)\\b"
+          "match": "\\b(0[b][01]+|0[o][0-7]+|0[x][0-9a-f]+|0\\d+|[1-9]\\d*)\\b"
         }
       ]
     },
