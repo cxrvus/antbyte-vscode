@@ -31,8 +31,27 @@
       "match": "^(set|fn|ant|use|use_cfg|no_std)"
     },
     "constants": {
-      "name": "constant.language.ant",
-      "match": "\\b(?:[A-Z][A-Z0-9_]*(?::[0-7])?|[01])\\b"
+      "patterns": [
+        {
+          "name": "constant.language.ant",
+          "match": "\\b([A-Z_]+)(\\d*)(?::([0-7]))?\\b",
+          "captures": {
+            "1": {
+              "name": "constant.language.ant"
+            },
+            "2": {
+              "name": "entity.name.type.ant"
+            },
+            "3": {
+              "name": "entity.name.type.ant"
+            }
+          }
+        },
+        {
+          "name": "constant.language.ant",
+          "match": "\\b[01]\\b"
+        }
+      ]
     },
     "function_calls": {
       "name": "entity.name.function.ant",
