@@ -28,7 +28,7 @@
     },
     "keywords": {
       "name": "keyword.control.ant",
-      "match": "^(set|fn|ant|use|use_cfg|no_std)"
+      "match": "^(set|def|ant|use|use_cfg|no_std)"
     },
     "constants": {
       "patterns": [
